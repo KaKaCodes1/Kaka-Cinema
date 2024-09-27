@@ -1,0 +1,416 @@
+
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    box-sizing: border-box;
+}
+/* Loader Styles */
+#loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #2c3e50;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .spinner::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.logo{
+    width: 100px; /* adjust the width of the image */
+    height: 100px; /* adjust the height of the image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+}
+/* HEADER STYLING */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: row; */
+    flex-grow: 1;
+}
+.navlist{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+.navlist li{
+    margin: 0 30px;
+}
+.navlist a{
+    text-decoration: none;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+.navlist a:hover{
+    color: #d31f1c;
+    text-shadow: 0 0 3px #283848;
+}
+.grouped_icons{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.material-symbols-outlined{
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.profile-pic{
+    border-radius: 50%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.parallax1 {
+/* The image used */
+background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url("images/pxfuel.jpg");
+
+/* Full height */
+height: 100%; 
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.infoblock{
+background-color:rgb(0, 0, 0);
+/* color: #39ff14; */
+/* font-size:45px; */
+width: 100%;
+min-height: 60vh;
+/* padding: 25px 50px 25px 50px; */
+font-weight: 400;
+text-align: justify;
+line-height: 24px;
+}
+
+
+
+.channel{
+    width: 180px;
+    height: 150px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.channel-fix{
+    width: 130px;
+    height: 90px;
+    margin-top: 10px;
+}
+.channels{
+    display: flex;
+    flex-direction: row;
+    justify-items: space-evenly;
+    align-items: center;
+    height: auto;
+    /* margin:10px 10% */
+}
+.section-title{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0;    
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+}
+footer{
+    text-align: center;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    /* position: fixed; */
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+}
+.home-block{
+    text-align: center;
+    
+    
+}
+
+.home-block p{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    color: rgb(233, 217, 217);
+}
+
+.home-title{
+    font-size: 100px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0;
+    color: #d31f1c;
+    text-shadow: 2px 2px 5px #283848;
+
+}
+.explore-btn{
+    border: none;
+    outline: none;
+    background-color: #d31f1c;
+    padding: 15px;
+    border-radius: 4px;
+    width: 200px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+.explore-btn:hover{
+    background-color: #283848;
+    color: white;
+    box-shadow: 0 0 20px 10px rgba(255, 136, 0, 0.8);
+}
+.channels, .movies, .series{
+    padding: 0 70px;
+}
+
+.movies, .series{
+    padding: 10px ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+.card-description{
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+
+}
+.movie-card{
+    border-radius: 5px;
+    background-color: #18171780;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 25%; /* This will create 3 product-cards per row. */
+    margin: 5px;
+    position: relative;
+    padding: 20px;
+}
+
+.card-background{
+    height: 320px;
+	display: block;
+    border-radius: 5px;
+    width:80%;
+
+}
+
+.card-button{
+    display: block;
+    margin: 0 auto;  
+    border: none;
+    outline: none;
+    background-color: #d31f1c;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 20px; */
+    font-size: 30px;
+    width: 200px;
+}
+.card-button:hover{
+    background-color: #283848;
+    color: white;
+    box-shadow: 0 0 20px 10px rgba(255, 136, 0, 0.8);
+}
+.card-container{
+    text-align: center;
+}
+
+/* FEEDBACK STYLING */
+.feedback-title{
+    font-size: 60px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #d31f1c;
+    text-align: center;
+    margin: 10px ;
+}
+.container{
+    text-align: center;
+    background-color: #18171780;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 70%;
+    margin: 0 15%;
+}
+
+form{
+    margin: 25px 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 70%;
+    margin: 0 15%;
+}
+.form-label{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.formgroup{
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+label{
+    display: block;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+}
+textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+.feedback-btn{
+    display: block;
+    margin: 0 auto;  
+    border: none;
+    outline: none;
+    background-color: #d31f1c;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.feedback-btn:hover{
+    background-color: #283848;
+    color: white;
+    box-shadow: 0 0 20px 10px rgba(255, 136, 0, 0.8);
+}
+
+ /* This will create 2 product-cards per row when the screen is less than 750px. */
+ @media only screen and (max-width: 768px) {
+    .movie-card {
+      flex: 1 0 40%;
+    }
+    .channel{
+        width: 100px;
+        height: 70px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    .channel-fix{
+        width: 50px;
+        height: 40px;
+        margin-right: 20px;
+    }
+  
+  }
+   /* This will create 1 product-card per row when the screen is less than 520px. */
+  @media only screen and (max-width: 520px) {
+    .product-card {
+      flex: 1 0 100%;
+    }
+    .channel{
+        width: 130px;
+        height: 40px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    .channel-fix{
+        width: 30px;
+        height: 20px;
+        margin-right: 20px;
+    }
+
+  }
+
