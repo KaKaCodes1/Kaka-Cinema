@@ -13,7 +13,7 @@ body,html{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: #000000;
     z-index: 9999;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@ body,html{
     height: 48px;
     border-radius: 50%;
     display: inline-block;
-    border-top: 4px solid #2c3e50;
+    border-top: 4px solid #d31f1c;
     border-right: 4px solid transparent;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
@@ -39,7 +39,7 @@ body,html{
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border-left: 4px solid #FF3D00;
+    border-left: 4px solid #98a7b7;
     border-bottom: 4px solid transparent;
     animation: rotation 0.5s linear infinite reverse;
   }
@@ -183,10 +183,15 @@ footer{
     background-color: rgb(19, 19, 19);
     width: 100%;
 }
+.fa{
+    font-size:24px;
+    border-radius: 50%;
+}
+.icons a{
+    color: #fff;
+}
 .home-block{
-    text-align: center;
-    
-    
+    text-align: center;  
 }
 
 .home-block p{
@@ -295,6 +300,9 @@ footer{
 .card-container{
     text-align: center;
 }
+.card-content a{
+    text-decoration: none;
+}
 
 /* FEEDBACK STYLING */
 .feedback-title{
@@ -383,8 +391,8 @@ textarea{
       flex: 1 0 40%;
     }
     .channel{
-        width: 100px;
-        height: 70px;
+        width: 130px;
+        height: 40px;
         margin-right: 20px;
         margin-top: 10px;
     }
